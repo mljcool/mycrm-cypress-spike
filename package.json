@@ -13,6 +13,10 @@
   "author": "me",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.6.0"
+    "cypress": "^4.7.0"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "pdf2html": "^2.5.2"
   }
 }

@@ -15,7 +15,37 @@
 /**
  * @type {Cypress.PluginConfig}
  */
+const fs = require('fs');
+const path = require('path');
+const pdf = require('pdf-parse');
+const repoRoot = path.join(__dirname, '..', '..'); // assumes pdf at project root
+const pdf2html = require('pdf2html');
+
+const parsePdf = async (pdfName) => {
+  const pdfPathname = path.join(repoRoot, pdfName);
+  let dataBuffer = fs.readFileSync(pdfPathname);
+  return await pdf(dataBuffer); // use async/await since pdf returns a promise
+};
+
+const praseToHTML = async (pdfFile) => {
+  return new Promise((resolve) => {
+    pdf2html.text(pdfFile, (err, html) => {
+      resolve(html);
+    });
+  });
+};
+
 module.exports = (on, config) => {
+  on('task', {
+    getPdfContent(pdfName) {
+      return parsePdf(pdfName); //just a placeholder
+    },
+    pdfToHTML(pdfName) {
+      console.log('here');
+      return praseToHTML(pdfName); //just a placeholder
+    },
+  });
+
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-}
+};
