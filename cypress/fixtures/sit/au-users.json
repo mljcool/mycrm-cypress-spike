@@ -1,0 +1,18 @@
+{
+  "userOne": {
+    "userDetails": {
+      "username": "helenbrokeracl@gmail.com",
+      "FirstName": "Helen"
+    }
+  },
+  "expected": {
+    "BusinessUnitName": "Loan Market Franchise ",
+    "ReportingStateName": "QLD",
+    "BrokerRegionalization": {
+      "CountryID": 2,
+      "Name": "Australia",
+      "Code": "AUD",
+      "CurrencySign": "$"
+    }
+  }
+}

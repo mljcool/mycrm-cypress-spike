@@ -1,0 +1,24 @@
+{
+  "userOne": {
+    "userDetails": {
+      "username": "michelle@nzfsg.co.nz",
+      "FirstName": "Michelle (NZFSG)"
+    }
+  },
+  "userTwo": {
+    "userDetails": {
+      "username": "brian.greer@nzfsg.co.nz",
+      "FirstName": "Brian"
+    }
+  },
+  "expected": {
+    "BusinessUnitName": "NZFSG",
+    "ReportingStateName": "NZ",
+    "BrokerRegionalization": {
+      "CountryID": 1,
+      "Name": "New Zealand",
+      "Code": "NZD",
+      "CurrencySign": "$"
+    }
+  }
+}

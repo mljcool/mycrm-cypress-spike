@@ -1,4 +1,8 @@
 {
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "defaultCommandTimeout": 5000,
+  "chromeWebSecurity": true,
+  "requestTimeout": 6000,
   "viewportWidth": 1600,
-  "viewportHeight": 660
+  "viewportHeight": 860
 }

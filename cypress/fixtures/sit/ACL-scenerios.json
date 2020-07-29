@@ -1,4 +1,24 @@
 {
   "id": "SIT-ID",
-  "name": "Hi SIT ko!"
+  "LoanId": 1538235,
+  "LoanScenarioId": "1022670",
+  "adviserOrganizationId": "7472",
+  "ClientId": "2802905",
+  "name": "Hi SIT ko!",
+  "GetBrokerBasicInfo" :{
+    "BrokerId": "2802905",
+    "FullName": "Helen BXXXXr",
+    "LastName": "BXXXXr",
+    "FirstName": "Helen",
+    "PreferredName": "HXXXn",
+    "ReportingStateId": 3,
+    "IsACLUser": false,
+    "ASICID": "558956",
+    "Email": [
+      {
+        "EmailAddress": "helenbrokeracl@gmail.com"
+      }
+    ],
+    "SourceFamilyID": 0
+  }
 }
