@@ -31,10 +31,9 @@ jobs:
     - run:
         name: Run Cypress tests
         command: 'npx cypress run'
+    - store_artifacts: true
 workflows:
   build:
     jobs:
-    - cypress/run:
-        store_artifacts: true
-
+    - cypress/run
   version: 2
