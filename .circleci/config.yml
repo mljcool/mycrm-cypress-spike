@@ -35,4 +35,6 @@ workflows:
   build:
     jobs:
     - cypress/run
+    store_artifacts: true
+
   version: 2
