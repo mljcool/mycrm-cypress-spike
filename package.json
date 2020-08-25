@@ -14,7 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.11.0",
-    "cypress-dotenv": "^1.2.2"
+    "cypress-dotenv": "^1.2.2",
+    "dotenv": "^8.2.0"
   },
   "dependencies": {
     "@okta/okta-auth-js": "^3.2.0",
