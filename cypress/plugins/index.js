@@ -1,4 +1,5 @@
 const dotenvPlugin = require('cypress-dotenv');
+const selectTestsWithGrep = require('cypress-select-tests/grep');
 
 /// <reference types="cypress" />
 
@@ -20,6 +21,7 @@ module.exports = (on, config) => {
   config = dotenvPlugin(config, null, true);
   const { env, fixturesFolder, projectRoot } = config;
 
+  on('file:preprocessor', selectTestsWithGrep(config));
   on('task', {
     getPdfContent(pdfName) {
       const getPDFPath = `${projectRoot}\\cypress\\temp\\${pdfName}`;

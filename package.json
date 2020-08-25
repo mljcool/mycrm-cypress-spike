@@ -15,7 +15,8 @@
   "devDependencies": {
     "cypress": "^4.11.0",
     "cypress-dotenv": "^1.2.2",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "cypress-select-tests": "^1.5.7"
   },
   "dependencies": {
     "@okta/okta-auth-js": "^3.2.0",

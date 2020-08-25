@@ -4,5 +4,6 @@
   "chromeWebSecurity": true,
   "requestTimeout": 6000,
   "viewportWidth": 1600,
-  "viewportHeight": 860
+  "viewportHeight": 860,
+  "video": false
 }
